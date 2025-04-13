@@ -1,6 +1,5 @@
 import PrintProduct from './(gallary)/product/PrintProduct';
 import ProductList from './(gallary)/product/ProductList';
-import ProductCard from './(gallary)/product/page';
 import ServicesHome from './(gallary)/servicesHome/page';
 import PopCard from './(home)/PopCard/page';
 import VideoPlayer from './(home)/VideoPlayer/page'

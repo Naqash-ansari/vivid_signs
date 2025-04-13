@@ -183,7 +183,7 @@ const ProductCard = () => {
                             <div className="flex items-center justify-between">
                                 <span className="text-lg font-bold text-gray-900 dark:text-white iansui-regular">{product.price}</span>
                                 <Link
-                                    href={`/product/${product.id}`}
+                                    // href={`/product/${product.id}`}
                                     className="nav btn_hov iansui-regular bg-[#0f1014] text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center"
                                 >
                                     More Info
