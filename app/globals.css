@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.nav {
+  --rebecca-purple: hsl(270, 60%, 15%);
+  background-image: linear-gradient(to bottom right,
+      hsla(203, 92%, 35.5%, 0.25),
+      var(--rebecca-purple),
+      hsla(27.6, 87.1%, 35.7%, 0.25));
+  background-color: var(--rebecca-purple);
+}
+
+.btn_hov:hover {
+  background-color: yellow !important;
+}
+
+.iansui-regular {
+  font-family: "Iansui", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mulish {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav_btn {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.bg_origin {
+  background-color: oklch(0.666 0.179 58.318);
+}
+
+.eqZPsd {
+  color: white !important;
+}
+
+.dLkQRC {
+  color: white !important;
+}
+
+
+.hero {
+  background: url(./services/web//images/hero-bg.svg) top center no-repeat;
+  background-size: cover;
+}
+
+/* .footer {
+  background: url(./images/footer.svg) top center no-repeat;
+  background-size: cover;
+} */
+
+.cta {
+  background: linear-gradient(rgba(2, 2, 2, .7), rgba(0, 0, 0, .7)), url(https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) fixed center center;
+}
+
+[data-aos^="zoom"][data-aos^="zoom"] {
+  opacity: unset !important;
+  transition-property: opacity, transform;
+}
+
+/* [data-aos^="fade"][data-aos^="fade"] {
+  opacity: unset !important;
+  transition-property: opacity, transform;
+} */
+
+.service_icon:hover {
+  cursor: pointer;
+
+  span {
+    color: white;
+  }
+}
